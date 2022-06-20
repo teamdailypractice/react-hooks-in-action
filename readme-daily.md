@@ -8,6 +8,9 @@
 
 ## commands used
 
+* cleaning up default CRA generated files
+
+```bash
 npx create-react-app react-hooks-in-action
 
 rm -f public/favicon.ico
@@ -18,6 +21,14 @@ rm -f src/*est*.js
 rm -f src/index.css
 rm -f src/*Webvitals*
 rm -f src/logo.svg
+```
+
+* packages to be installed
+
+```bash
+npm i react-router-dom
+npm i react-icons
+```
 
 ## Todo later
 

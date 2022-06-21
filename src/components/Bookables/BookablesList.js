@@ -1,16 +1,18 @@
+import { useState } from "react";
 import data from "../../static.json";
 
 export default function BookablesList() {
 
-    
+    const [bookableIndex, setBookableIndex] = useState(1);
+
     const group = "Rooms";
     const bookables = data.bookables;
     const bookablesInGroup = bookables.filter(b => b.group === group);
 
-    let bookableIndex = 1;
+
 
     function changeBookable(selectedIndex) {
-        bookableIndex = selectedIndex;
+        setBookableIndex(selectedIndex);
         console.log(selectedIndex);
     }
     return (
@@ -23,7 +25,7 @@ export default function BookablesList() {
                     >
                         <button
                             className="btn"
-                            onClick = {() => changeBookable(i)}
+                            onClick={() => changeBookable(i)}
                         >
                             {b.title}
                         </button>

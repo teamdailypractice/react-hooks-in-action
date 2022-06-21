@@ -15,6 +15,7 @@ import UsersPage from './Users/UsersPage'
 import UserPicker from './Users/UserPicker'
 
 function App() {
+  
   return (
     <Router>
       <div className="App">
@@ -46,7 +47,7 @@ function App() {
         <Routes>
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/bookables" element={<BookablesPage />} />
-          <Route path="/users" element={<UsersPage />} />
+          <Route path="/users" element={<UsersPage/>} />
         </Routes>
       </div>
     </Router>
